@@ -1,0 +1,167 @@
+body{
+    margin-left: 55px;
+    font-family: Arial, Helvetica, sans-serif;       
+    background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+  }
+  h2{
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(46, 43, 43);
+  }
+  h1{
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(46, 43, 43);
+  }
+  a {
+    text-decoration: none;
+    padding: 90px;
+  }
+  #form{
+    margin:0;
+    background-color: rgba(85, 85, 139, 0.814);;
+    border-radius: 2%;
+    padding: 20px;
+  }
+  #experience{
+    line-height: 1.6;
+    font-family: cursive;
+    font-weight: bold;
+    list-style-type: square;
+  }
+  #skills{
+    line-height: 1.6;
+    font-family: cursive;
+    font-weight: bold;
+    list-style-type: square;
+  }
+  label{
+    font-weight: bolder;
+    color: rgb(67, 15, 163);
+    font-size: 29px;
+  }
+  #fname{
+      color: Black;
+      font-size: large;
+      font-weight: bold;
+      padding: 10px;
+  }
+  #email{
+    color: Black;
+    font-size: large;
+    padding: 10px;
+  }
+  #message{
+    color: rgb(73, 65, 65);
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  input{
+    border-radius: 10%;
+    border: 1px solid blue;
+    background-color: grey}
+  textarea{
+    border-radius: 10%;
+    border: 1px solid blue;
+    background-color: grey;}
+  button{
+    border-radius: 15%;
+    border: 1px solid blue;
+    color: rgb(67, 15, 163);
+    font-weight: bolder;
+    background-color: magenta;
+    font-size: 30px;
+  }
+  hr{
+    border: 1px solid blue;
+    font-size: 30px;
+  }
+  #footer{
+    background-color: rgb(135, 24, 135);
+    padding: 40px;
+    margin: 0px;
+  }
+  /* @MEDIA For Responsive Design */
+/* For Desktops  */
+@media screen and (min-width: 1024px) {
+    body{
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+   
+  /* For Tablets */
+  @media screen and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+    body{
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+      
+    }
+    
+  }
+   
+  /* For Mobile Portraits */
+  @media screen and (max-device-width: 480px)
+  and (orientation: portrait) {
+    body{
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    
+    }
+  }
+   
+  /* For Mobile Landscapes */
+  @media screen and (max-device-width: 640px)
+  and (orientation: landscape) {
+    body{
+      width: 400px;
+      height: 200px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+      
+    }
+  }
+   
+  /* For Mobile Phones both Portrait & Landscape */
+  @media screen and (max-device-width: 640px) {
+    body{
+      width: 400px;
+      height: 200px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+   
+  /* For iPhone 4 Portrait & Landscape */
+  @media screen and (min-device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body{
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+   
+  /* For iPhone 5 Portrait & Landscape */
+  @media (device-height: 568px) and (device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body{
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+   
+  /* For iPhone 6 and 6 plus Portrait & Landscape  */
+  @media (min-device-height: 667px) and (min-device-width: 375px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    body{
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+

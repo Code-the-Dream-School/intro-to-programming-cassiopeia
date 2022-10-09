@@ -5,69 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 4</title>
-    
-    <style>
-        body{
-            margin-left: 120px;
-            margin-right: 100px;;
-            margin-top: 100px;
-            background-color: rgba(85, 85, 139, 0.814);
-        }
+    <title>Lesson 4- 4</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
-        #form{
-            margin:0;
-            background-color: rgba(85, 85, 139, 0.814);;
-            border-radius: 2%;
-            padding: 20px;
-        }
-    </style>
+   <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <h1>Hello. I'm Veronica Johnson </h1>
-    <h4>This week is Week 10 - lesson 4-3</h4>
-
-    
+    <hr >
+    <h4>Week 11 - lesson 4-4</h4>
+   
         <h1>"About"</h1>
-
-
        
             <p>Hello my name is Veronica Johnson. Hmmm a little bit about me. Well, I'm a Mom of two amazing young men.
                 They are pretty opposite as it pertains to almost everything. The one thing they have in common, I would
                 have to say is that they both have great hearts and they are both super creative. As for me, aprt from
                 the fact that I am absolutely fascinated by technology, I'm a true creative at my core,.</p>
-      
-
         <br>
-       
-            <h1 id="skills">"Experience"</h1>
-            <br>
-            <ul>
-                <li>The YMCA</li>
+        <hr >
+            <h1 >"Experience"</h1>
+            <ul id="experience">               
                 <li>Wendy's</li>
+                <li>The YMCA</li>
                 <li>Howard University Library</li>
                 <li>Royal Dance academy</li>
+                <li>Jomandi Theater</li>
                 <li>UGA</li>
                 <li>Underwood University</li>
                 <li>MSU</li>
                 <li>Gwinnett County Public School System</li>
-                <li>Jomandi Theater</li>
+               
             </ul>
-        
-        <br>
-
-      
-            <h1>"Connect"</h1>
-            <a href="#email.html">Email</a>
+            <hr >
+            <h1 >"Skills"</h1>
+            <ul id="skills">               
+              <li> Blackboard, Moodle, Canvas </li>
+               <li> HTML, CSS, JavaScript </li>
+               <li>  React, Node, SQL, Github</li>               
+              <li> STEM, Block Coding</li>
+              
+               
+            </ul>
+            <hr >
+        <h1>"Connect"</h1>
+            <a href="#email.html" text-decoration:>Email</a>
             <a href="#GIT.html">GitHub</a>
             <a href="#SSM.html">Social Media</a>
-            <a href="#ETC.html">ETC</a>
+            <a href="#contact.html">Contact</a>
         </section>
-        <br><br>
-       
-           
+        <br><br>           
             <section>
+              <hr >
                 <h2>Leave a Message</h2>
                 <div>
                     <!-- <div class="col-4"></div> -->
@@ -78,15 +67,15 @@
                           <input type="text" class="form-control" minlength="5" maxlength="50" id="fname" required> -->
                       
                       <!-- <input> element with attributes: type "text", name "name", and required true -->
-                      <label for="name">Name</label><br>
+                      <label for="name">Name</label><br><br>
                       <input id="fname" type="text" name="name" required>
                       <br><br>
                       <!-- <input> element with attributes: type "email", name "email", and required true -->
-                      <label for="email">Email</label><br>
+                      <label for="email">Email</label><br><br>
                       <input id="email" type="email" name="email" required>
                       <br><br>
                       <!-- <textarea> element with attributes: name "message" and required true -->
-                          <label for="message">Message</label><br>
+                          <label for="message">Message</label><br><br>
                           <textarea id="message" name="message" id="text_area" cols="30" rows="10" required></textarea>
                      <br><br>
                           <!-- <button> element that says "Submit" and has type attribute equal to "submit" -->
@@ -97,12 +86,13 @@
               
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
+                      <hr >
                     </div>
                     <div class="col-4"></div>
                   </div>
                   <div class="row">
                     <div class="col-12">
-                      <h2>Messages</h2>
+                      <h3>Messages</h3>
                     </div>
                     <div class="col-12">
                       <ul id="addNames">
@@ -111,7 +101,7 @@
                   </div>
                   <div class="row">
                     <div class="col-12">
-                      <h2>Read!</h2>
+                      <h3>Read!</h3>
                     </div>
                     <div class="col-12">
                       <ul id="done_items">
@@ -120,6 +110,8 @@
                   </div>
                 </div>
                </div>
+               </section>
+               
                 <script>
                   let contacts = document.getElementById("contact");
                   contacts.addEventListener('submit', addMessages );
@@ -161,12 +153,9 @@
                  }
               
                 </script>
-            </section>
-           
-
-            </section>
+        
             <footer id="footer">Footer</footer>
-            <h4>Next week is Week 11-  lesson 4-4</h4>
+            
             <script src="script.js"></script>
 </body>
 
