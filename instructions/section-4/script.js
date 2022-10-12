@@ -1,7 +1,7 @@
 const today = new Date();
 const thisyear = today.getFullYear();
 const footer = document.getElementById('footer')
-footer.innerHTML= `Copyright_Veronica M Johnson@CoDance.com:- ${thisyear}`;
+footer.innerHTML= `Copyright Ⓒ Veronica Johnson@CoDance.com:   ${thisyear}`;
 const copyright = document.createElement('p');
 copyright.innerHTML = `Veronica M Johnson :${thisyear}`;
 footer.appenChild(copyright);
