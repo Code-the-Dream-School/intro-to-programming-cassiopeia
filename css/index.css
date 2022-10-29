@@ -1,0 +1,139 @@
+body{
+    padding: 30px 0px 80px 0px;
+    width: 100%;
+    position: relative;
+    font-family: Cambria;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(210,220,250)
+  }
+  #experience{
+    border-block-style: solid;
+    border-color: purple;
+    border-width: 15px;
+    writing-mode: vertical;
+    direction: rtl;
+  }
+  #skills{
+    border-block-style: dotted;
+    border-color: blue;
+    border-width: 5px;
+    writing-mode: horizontal-tb;
+    direction: rtl;
+  }
+  h1{
+    color: purple;
+    background-color: pink;
+    font-size: 40px;
+    text-decoration: underline; 
+  }
+   h2{
+    text-transform: uppercase;
+    background-color: white;
+    color: royalblue;
+    padding: 5px;
+    width: 30%;
+    margin: auto;
+  }
+  ul{
+    list-style: none;
+  }
+  .incoming_message{
+    text-align: relative;
+    font-size: 30px;
+    font-family: Verdana sans-serif;
+    background-color: white;
+    color: blue;
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+    display: inline-block;
+  }
+  #submit{
+    font-size: 20px;
+    padding: 5px;
+    line-height: 2;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: .5em;
+    background-color: pink;
+    border-color: blue;
+    color: purple;
+    border-width: 2px;
+  }
+  #messages{
+    padding-bottom: 50px;
+    margin: auto;
+    background-color: purple;
+    padding: 20px;
+  }
+  footer{
+    Font-size: 10px;
+    font: bold;
+    margin: auto;
+    background-color: pink;
+    padding: 10px;
+  }
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  .gfg-div {
+    background-color: #63c971;
+    color: #fff;
+  }
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    color: black;
+  }
+}
+ 
+ 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .gfg-div {
+    width: 400px;
+    height: 200px;
+    background-color: chartreuse;
+    color: black;
+  }
+}
+ 
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    color: black;
+  }
+}
+ 
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    color: black;
+  }
+}
+ 
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: darkgoldenrod;
+    color: black;
+  }
+}
