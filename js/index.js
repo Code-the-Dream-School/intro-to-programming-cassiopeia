@@ -25,8 +25,7 @@ for (let i = 0; i < skills.length; i++) {
 }
 
 
-
-var messageForm = document.getElementsByName("leave_message")[0];
+var messageForm = document.getElementById("leave_message");
 messageForm.addEventListener("submit", function (event) {
     event.preventDefault();
     var name = event.target.name.value;
@@ -49,4 +48,18 @@ messageForm.addEventListener("submit", function (event) {
     messageList.appendChild(newMessage);
     messageForm.reset();
 });
+
+var githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', "https://api.github.com/users/marwaahmad18/repos");
+githubRequest.send();
+githubRequest.onload = function() {
+    var repositories = JSON.parse(this.response);
+    var projectSection = document.getElementById("projects");
+    var projectList = projectSection.querySelector("ul");
+    for (let i = 0; i < repositories.length; i++) {
+        var project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    }
+};
 
