@@ -49,17 +49,40 @@ messageForm.addEventListener("submit", function (event) {
     messageForm.reset();
 });
 
-var githubRequest = new XMLHttpRequest();
-githubRequest.open('GET', "https://api.github.com/users/marwaahmad18/repos");
-githubRequest.send();
-githubRequest.onload = function() {
-    var repositories = JSON.parse(this.response);
-    var projectSection = document.getElementById("projects");
-    var projectList = projectSection.querySelector("ul");
-    for (let i = 0; i < repositories.length; i++) {
-        var project = document.createElement("li");
-        project.innerText = repositories[i].name;
-        projectList.appendChild(project);
-    }
-};
+// var githubRequest = new XMLHttpRequest();
+// githubRequest.open('GET', "https://api.github.com/users/marwaahmad18/repos");
+// githubRequest.send();
+// githubRequest.onload = function() {
+//     var repositories = JSON.parse(this.response);
+//     var projectSection = document.getElementById("projects");
+//     var projectList = projectSection.querySelector("ul");
+//     for (let i = 0; i < repositories.length; i++) {
+//         var project = document.createElement("li");
+//         project.innerText = repositories[i].name;
+//         projectList.appendChild(project);
+//     }
+// };
+
+// Fetch
+fetch("https://api.github.com/users/marwaahmad18/repos",
+    {
+        mode: 'cors'
+    })
+    .then(function(response) {
+        var repos = response.json(); 
+        return repos;
+    })
+    .then(function(repositories) {
+        var projectSection = document.getElementById("projects");
+        var projectList = projectSection.querySelector("ul");
+        for (let i = 0; i < repositories.length; i++) {
+            var project = document.createElement("li");
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    })
+    .catch(function(err) {
+        console.log("Error happened while fetching repositories");
+    });
+
 
