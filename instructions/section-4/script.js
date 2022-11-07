@@ -49,17 +49,96 @@ messageForm.addEventListener('submit',function(event){
         const repositories = JSON.parse(this.response);
         console.log(repositories);
     }
+
+// ----------------------------------------------------------------------------------------
+
+//THIS IS AJAX
+//First assign the ajax method
+
+
     // const githubRequest = new XMLHttpRequest();
     // githubRequest.open('GET', 'https://api.github.com/users/Vjohnson222/repos');
     // githubRequest.send();
 
-    req.addEventListener("progress", updateProgress);
-    req.addEventListener("load", transferComplete);
-    req.addEventListener("error", transferFailed);
-    req.addEventListener("abort", transferCancelled);
-    const githubRequest = new XMLHttpRequest();
-    githubRequest.open('GET', 'https://api.github.com/users/Vjohnson222/repos');
-    githubRequest.send();
+// const makeRequest = new XMLHttpRequest();
+// makeRequest.open('GET', 'https://api.github.com/users/Vjohnson222/repos');
+// makeRequest.onload = function(){
+
+//This reflects what will happen when our data loads
+
+// let ourData = JSON.parse( makeRequest .response.Text) 
+// Console.log(ourData.Results)
+// }
+
+
+___________________________________________________________
+// Then this – Yes you do know how to do this
+// Give the place where you want this to appear an ID space is all 
+
+ 
+
+// function renderHTML(data){
+// Console.log(data)
+// }
+
+// function fetchData(){
+// Fetch('https://api.github.com/users/Vjohnson222/repos')
+// // Then This 
+// .then(response => response.json())
+// .then (dataFromApi => {
+// renderHTML(dataFromApi)
+// })
+// }
+
+// --------------------------------------------
+// Followed video tutorial after being frustrated 
+console.log('Hello')
+
+var area = document.getElementById("dataHere");
+function renderHTML(data){
+
+    Console.log(data)
+    }
+
+    function fetchData(){
+
+fetch('https://api.github.com/users/Vjohnson222/repos')
+.then(res => res.json())
+.then (data => {
+    renderHTML(data)
+    })
+    }
+
+var area1 = document.getElementById("dataHere1");    
+
+// var url ='https://api.github.com/users/Vjohnson222/repos';
+
+ 
+//   function exchange1() {
+//     fetch(url)
+    
+//       .then((response) => {
+//         return response.json();
+//       })
+//       .then((data) => {
+//         console.log(data);
+//         area1.innerHTML = `<a href="med1.html">This is the data</a><br/><br/><br/><br/>"${data[0].id} "`;
+
+     
+//       });
+//   }
+
+    // const githubRequest = new XMLHttpRequest();
+    // githubRequest.open('GET', 'https://api.github.com/users/Vjohnson222/repos');
+    // githubRequest.send();
+
+    // req.addEventListener("progress", updateProgress);
+    // req.addEventListener("load", transferComplete);
+    // req.addEventListener("error", transferFailed);
+    // req.addEventListener("abort", transferCancelled);
+    // const githubRequest = new XMLHttpRequest();
+    // githubRequest.open('GET', 'https://api.github.com/users/Vjohnson222/repos');
+    // githubRequest.send();
 
 
     // window.addEventListener('load', (event)=> {
@@ -73,3 +152,4 @@ messageForm.addEventListener('submit',function(event){
             // console.log(repositories);
     //     })
     // });
+

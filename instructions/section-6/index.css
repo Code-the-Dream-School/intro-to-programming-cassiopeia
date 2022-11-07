@@ -1,7 +1,76 @@
+    .flip-card {
+      background-color: transparent;
+      padding: 25px;
+      width: 250px;
+      height: 150px;
+      perspective: 1000px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-color: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+      color: black;
+    }
+    
+    .flip-card-back {
+      background-color: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+      color: black;
+      transform: rotateY(180deg);
+    }
+    #skills{
+      margin-left: 300px;
+    }
+   
 body{
-    margin-left: 5px;
+  
+  margin-left: 20px;
+  margin-right: 25px;
+   
     font-family: Arial, Helvetica, sans-serif;       
     background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+    width: auto;
+    margin:0;
+  }
+p{
+  margin:0px 90px 50px 50px;
+  font-size: 22px;
+  line-height: 150%;   
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 50px;
+  /* ---------------------------------------------- */
+  margin-left: 25px;
+  margin-right: 45px;
+  text-indent: 50px;
+}
+ 
+  img{
+    margin-right: 122px;
+    border-radius: 25%;
+    opacity: 0.9;
   }
   #count{
     color: rgb(46, 43, 43);
@@ -18,13 +87,19 @@ body{
   }
   h1{
     font-family: "Sofia", sans-serif;
-    font-size: 60px;
-    text-align: center;
+    font-size: 70px;
+    margin-left: 100px;
+    margin-top: 50px;
+    /* text-align: center; */
     color: rgb(46, 43, 43);
   }
-  a {
+  #aa a {
     text-decoration: none;
-    padding: 90px;
+    padding: 50px;
+    color:rgb(238, 104, 180); 
+    font-size: 30px;
+    margin-left: 175px;
+
   }
   #form{
     margin:0;
@@ -67,11 +142,13 @@ body{
   }
   input{
     border: 1px solid blue;
-    background-color: rgb(255, 0, 153)
+    background-color: rgb(255, 0, 153);
+    width: 222px;
   }
   textarea{
     border: 1px solid blue;
     background-color: rgb(255, 0, 153);
+    width: 222px;
   }
   button{
     border-radius: 15%;
@@ -89,11 +166,14 @@ body{
 
   .sot ul {
 list-style-type: none;
-margin: 0;
+margin-left: 25px;
+margin-right: 20px;
 padding: 0;
 overflow: hidden;
 background-color:  rgb(101, 59, 85);
-border-radius: 25%;
+border-radius: 5%;
+margin-top: 20px;
+font-size: 0px;
 }
 
 
@@ -130,26 +210,30 @@ padding: 10px;
 background-color: rgb(163, 40, 114);
 border: 1px solid black;
 text-align: center;
-font-size: 30px;
+font-size: 20px;
 padding: 30px;
 }
 .grid-container2 {
-display: grid;
+  display: flex;
+  flex-wrap: nowrap;
+  display: grid;
 grid-template-columns: auto auto auto ;
-gap: 10px;
+/* gap: 10px; */
 background-color: rgb(142, 20, 93);
 padding: 10px;
-margin-left: 110px;
+margin-left: 30px;
 margin-right: 50px;
 
 }
 
 .grid-container2 > div {
+  width: 250px;
+margin-left: 55px;
 background-color: rgb(163, 40, 114);
 border: 1px solid black;
 text-align: center;
 font-size: 30px;
-padding: 30px;
+
 
 }
 #count{
