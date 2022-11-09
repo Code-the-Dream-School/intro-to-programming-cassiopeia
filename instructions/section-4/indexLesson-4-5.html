@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4-5 </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+   <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="index"></div>
+  <div class="sot">
+    <ul >  
+      <li><a href="indexLesson-4-5.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills2">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>  
+      <li><a href="#index" style="color: transparent">Space</a></li>  
+      <li><a href="#index" style="color: transparent">Space</a></li>  
+      <li><a href="#index" style="color: transparent">Space</a></li>  
+      
+
+    </ul>
+  </div >
+
+    <h1>Hello. I'm Veronica Johnson </h1>
+    <hr >
+    <h4>Week 11 - lesson 4-5</h4>
+   <br> <br>
+   <div id="about"></div>
+        <h1>"About"</h1>
+        <li><a href="indexLesson-4-5.html">Back to the top</a></li>
+
+            <p>Hello my name is Veronica Johnson. Hmmm a little bit about me. Well, I'm a Mom of two amazing young men.
+                They are pretty opposite as it pertains to almost everything. The one thing they have in common, I would
+                have to say is that they both have great hearts and they are both super creative. As for me, aprt from
+                the fact that I am absolutely fascinated by technology, I'm a true creative at my core.
+              </p>
+        <br>
+        <hr >
+        <div id="experience"></div>
+
+            <h1 >"Experience"</h1>
+            <li><a href="indexLesson-4-5.html">Back to the top</a></li>
+            <div class="grid-container">
+              <div>Wendy's</div>
+              <div>The YMCA</div>
+              <div>Howard University Library</div>  
+              <div>Royal Dance academy</div>
+              <div>Jomandi Theater</div>
+              <div>UGA</div>
+              <div>Underwood University</div>
+              <div>MSU</div>
+            </div>
+
+            <hr >
+
+            <div id="skills2"></div>
+
+            <h1 >"Skills"</h1>
+            <li><a href="indexLesson-4-5.html">Back to the top</a></li>
+
+            <ul id="skills">               
+              <li> Blackboard, Moodle, Canvas </li>
+               <li> HTML, CSS, JavaScript </li>
+               <li>  React, Node, SQL, Github</li>               
+              <li> STEM, Block Coding</li>    
+          </ul>
+
+            <hr >
+        <h1>"Connect"</h1>
+            <a href="#email.html">Email</a>
+            <a href="#GIT.html">GitHub</a>
+            <a href="#SSM.html">Social Media</a>
+            <a href="#contact.html">Contact</a>
+        </section>
+        <div id="contact2"></div> 
+        <br><br>   
+
+       
+            <section>
+         <hr >
+                <h2>Leave a Message</h2>
+                <li><a href="indexLesson-4-5.html">Back to the top</a></li>
+
+                <div class="grid-container2">
+                  <div><div>
+                   
+                    <div class="col-5">
+                      <form id="contact">
+                        <div class="mb-3">
+                        
+                      <label for="name">Name</label><br><br>
+                      <input id="fname" type="text" name="name" required>
+                      <br><br>
+                      <label for="email">Email</label><br><br>
+                      <input id="email" type="email" name="email" required>
+                      <br><br>
+                          <label for="message">Message <span style = "color:rgb(163, 40, 114)" >--------</span></label> <button type="submit" class="btn btn-primary">Submit</button>  <br><br>
+                          <textarea id="message" name="message" id="text_area" cols="30" rows="10" required></textarea>
+                     <br><br>              
+                      </form>
+                      <hr >
+                    </div>
+                    <div class="col-4"></div>
+                  </div>
+                </div>               
+                </div>
+                
+                  <div class="row">
+                    <div class="col-12">
+                      <h3>Messages</h3>
+                      <hr>
+                    </div>
+                    <div class="col-12">
+                      <ul id="addNames">
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <h3>Read!</h3>
+                      <hr>
+                    </div>
+                    <div class="col-12">
+                      <ul id="done_items">
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               </section>
+               <br>
+               <footer id="footer">Footer</footer>
+
+
+                <script>
+                  let contacts = document.getElementById("contact");
+                  contacts.addEventListener('submit', addMessages );
+                  let nameList = document.getElementById("addNames");
+                  let doneList = document.getElementById("done_items");
+                  let testVariable;// This is new
+              
+                  function addMessages (event) {
+                    event.preventDefault();
+                    let input = document.getElementById("fname");
+                    let  newName = document.createElement("li");
+                    let doneButton = document.createElement('button');
+                    let space = document.createElement('hr');
+                    let deleteButton = document.createElement('button');//This is new
+                    //Do for CSS
+                    doneButton.textContent = "Move to Read!   ";
+                    deleteButton.textContent = "Delete";
+                     newName.textContent = input.value;
+                     newName.appendChild(doneButton);
+                     newName.appendChild(space);
+                     newName.appendChild(deleteButton)
+              
+                    nameList.appendChild( newName)
+                    doneButton.addEventListener('click', markAsRead );
+                    deleteButton.addEventListener('click', deleteItem );
+                    input.value = "";
+                  }
+                   
+                    function markAsRead(event) {
+                    console.log(event);
+                    if (event.target.textContent == "  Read! ") {
+                      nameList.appendChild(event.target.parentElement);
+                      event.target.textContent = "  Move to Read! ";
+                    } else {
+                      doneList.appendChild(event.target.parentElement);
+                      event.target.textContent = "  Read! ";
+                    }
+                  }
+                 function deleteItem(event){
+                  event.target.parentElement.remove();
+                 }
+               </script>
+        
+            
+            
+            <script src="script.js"></script>
+</body>
+
+
+</html>

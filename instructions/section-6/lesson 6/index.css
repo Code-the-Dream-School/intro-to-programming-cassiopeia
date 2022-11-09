@@ -1,0 +1,332 @@
+    .flip-card {
+      background-color: transparent;
+      padding: 25px;
+      width: 180px;
+      height: 150px;
+      perspective: 1000px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-color: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+      color: black;
+    }
+    
+    .flip-card-back {
+      background-color: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+      color: black;
+      transform: rotateY(180deg);
+    }
+    #skills{
+      margin-left: 300px;
+    }
+   
+body{
+  
+  margin-left: 20px;
+  margin-right: 25px;
+   
+    font-family: Arial, Helvetica, sans-serif;       
+    background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+    width: auto;
+    margin:0;
+  }
+p{
+  margin:0px 90px 50px 50px;
+  font-size: 22px;
+  line-height: 150%;   
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 50px;
+  /* ---------------------------------------------- */
+  margin-left: 25px;
+  margin-right: 45px;
+  text-indent: 50px;
+}
+ 
+  img{
+    margin-right: 122px;
+    border-radius: 25%;
+    opacity: 0.9;
+  }
+  #count{
+    color: rgb(46, 43, 43);
+  }
+  .dot {
+
+    margin-left: 55px;
+  }
+  h2{
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(46, 43, 43);
+  }
+  h1{
+    font-family: "Sofia", sans-serif;
+    font-size: 70px;
+    margin-left: 100px;
+    margin-top: 50px;
+    /* text-align: center; */
+    color: rgb(46, 43, 43);
+  }
+  #aa a {
+    text-decoration: none;
+    padding: 50px;
+    color:rgb(238, 104, 180); 
+    font-size: 30px;
+    margin-left: 175px;
+
+  }
+  #form{
+    margin:0;
+    border-radius: 2%;
+    padding: 10px;
+  }
+  #experience{
+    
+    line-height: 1.6;
+    font-family: cursive;
+    font-weight: bold;
+    list-style-type: square;
+  }
+  #skills{
+    line-height: 1.6;
+    font-family: cursive;
+    font-weight: bold;
+    list-style-type: square;
+  }
+  label{
+    font-weight: bolder;
+    color: rgb(46, 43, 43);
+        font-size: 29px;
+  }
+  #fname{
+    color: rgb(46, 43, 43);
+      font-size: large;
+      font-weight: bold;
+      padding: 5px;
+  }
+  #email{
+    color: rgb(46, 43, 43);
+    font-size: large;
+    padding: 5px;
+  }
+  #message{
+    color: rgb(46, 43, 43);
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  input{
+    border: 1px solid blue;
+    background-color: rgb(255, 0, 153);
+    width: 222px;
+  }
+  textarea{
+    border: 1px solid blue;
+    background-color: rgb(255, 0, 153);
+    width: 222px;
+  }
+  button{
+    border-radius: 15%;
+    border: 1px solid blue;
+    color: rgb(46, 43, 43);
+    font-weight: bolder;
+    background-color: magenta;
+    font-size: 30px;
+  }
+  hr{
+    border: 1px solid blue;
+    font-size: 30px;
+  }
+
+
+  .sot ul {
+list-style-type: none;
+margin-left: 25px;
+margin-right: 20px;
+padding: 0;
+overflow: hidden;
+background-color:  rgb(101, 59, 85);
+border-radius: 5%;
+margin-top: 20px;
+font-size: 0px;
+}
+
+
+.sot li {
+float: left;
+}
+
+.sot li a {
+display: block;
+color: black;
+text-align: center;
+padding: 20px;
+text-decoration: none;
+font-size: 30px;
+font-weight: bold;
+}
+
+.sot li a:hover:not(.active) {
+background-color: rgb(142, 20, 93)
+}
+
+.sot .active {
+background-color: #04AA6D;
+}
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+gap: 10px;
+background-color: rgb(142, 20, 93);
+padding: 10px;
+margin-left: 20px;
+margin-right: 30px;
+}
+
+.grid-container > div {
+background-color: rgb(163, 40, 114);
+border: 1px solid black;
+text-align: center;
+font-size: 20px;
+padding: 30px;
+}
+.grid-container2 {
+  display: flex;
+  flex-wrap: nowrap;
+  display: grid;
+grid-template-columns: auto auto auto ;
+/* gap: 10px; */
+background-color: rgb(142, 20, 93);
+padding: 10px;
+margin-left: 30px;
+margin-right: 50px;
+
+}
+
+.grid-container2 > div {
+  width: 250px;
+margin-left: 55px;
+background-color: rgb(163, 40, 114);
+border: 1px solid black;
+text-align: center;
+font-size: 30px;
+
+
+}
+#count{
+  color: rgb(46, 43, 43);
+}
+
+
+  #footer{
+    background-color: rgb(135, 24, 135);
+    padding: 40px;
+    margin: 0px;
+  }
+  /* @MEDIA For Responsive Design */
+/* For Desktops  */
+@media screen and (min-width: 1024px) {
+    body{
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+   
+  /* For Tablets */
+  @media screen and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+    body{
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+      
+    }
+    
+  }
+   
+  /* For Mobile Portraits */
+  @media screen and (max-device-width: 480px)
+  and (orientation: portrait) {
+    body{
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    
+    }
+  }
+   
+  /* For Mobile Landscapes */
+  @media screen and (max-device-width: 640px)
+  and (orientation: landscape) {
+    body{
+      width: 400px;
+      height: 200px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+      
+    }
+  }
+   
+  /* For Mobile Phones both Portrait & Landscape */
+  @media screen and (max-device-width: 640px) {
+    body{
+      width: 400px;
+      height: 200px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+   
+  /* For iPhone 4 Portrait & Landscape */
+  @media screen and (min-device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body{
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+   
+  /* For iPhone 5 Portrait & Landscape */
+  @media (device-height: 568px) and (device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body{
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+   
+  /* For iPhone 6 and 6 plus Portrait & Landscape  */
+  @media (min-device-height: 667px) and (min-device-width: 375px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    body{
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64)); 
+    }
+  }
+
