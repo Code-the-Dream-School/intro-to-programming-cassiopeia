@@ -35,7 +35,7 @@
         <p>Computer Science College graduate with a Master of science in Information Systems Management followed by 3 Graduate level certificates in Cyber Security, health information systems and project management. Though I’ve had the opportunity to study many aspects of full stack web development, I find my comfort with that of front-end web development. </p>
         <p>I'm a Mom of two amazing young men whose personalities are like night and day. However, their common denominators rest well within their technological career paths and high levels of innate creativity. I guess they get it honestly as my chosen career path rest within tech and yet  I’ve been an artist. On any given day, you can find us either glued to our computers or creating something that involves, paint, nails, and my favorite… Power tools. </p>
         
-        <a href="indexLesson-6-1.html" style="margin-left: 1150px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
+        <a href="indexLesson-6-1.html" style="margin-left: 950px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
 
       </div>
         <br>
@@ -54,7 +54,7 @@
               <div>Web Design and Development Instructor<br><br> Gwinnett Technical College</div>            
         </div>
               <br>
-             <a href="indexLesson-6-1.html" style="margin-left: 1350px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
+             <a href="indexLesson-6-1.html" style="margin-left: 950px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
 
          
            <hr >
@@ -71,14 +71,22 @@
              <li> AWS Academy Cloud Foundations</li>
          </ul>
           <br>
-          <a href="indexLesson-6-1.html" style="margin-left: 1150px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
+          <a href="indexLesson-6-1.html" style="margin-left: 950px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
        <hr>
 
       <section id="projects">
        <div id="project"></div>
-         <div> <h2> Projects<hr></h2> </div>
+         <div> <h2> Projects <br>
+          <button id="button" style ="background: transparent;" >Click here for - Veronica's GitHub Repos </button>
+         <br>
+          <button style ="background: transparent; color: black;"> <a href="indexLesson-6-1.html">Close </button>
+     
+      <div id="users"></div>
+      <hr></h2>
+         </div>
     
     <div class="grid-container">
+      
       <!-- ------------------------- -->
       <div class="flip-card">
         <div class="flip-card-inner">
@@ -134,7 +142,7 @@
 
 </section>
 <br>
-<a href="indexLesson-6-1.html" style="margin-left: 1150px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
+<a href="indexLesson-6-1.html" style="margin-left: 950px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
 
       <section id="aa"> 
         <hr >
@@ -195,7 +203,7 @@
                </div>
                </section>
                <br>
-               <a href="indexLesson-6-1.html" style="margin-left: 1250px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
+               <a href="indexLesson-6-1.html" style="margin-left: 950px; color:rgb(238, 104, 180); font-size: 15px;">Back to the top</a>
 
                <footer id="footer">Footer</footer>
 
@@ -241,6 +249,34 @@
                  function deleteItem(event){
                   event.target.parentElement.remove();
                  }
+
+                //  --------------------------------------GITHUB________________________
+
+        document.getElementById('button').addEventListener('click', loadUser);
+        function loadUser(activatedId){
+          
+          fetch('https://api.github.com/users/Vjohnson222/repos')
+                    .then(users => users.json())
+                    .then(users => {                
+                    var users_data = '';
+                    for(var user in users){
+                        users_data +=
+                        `<div style=" font-size: 25px; font-family: times; background-color: rgb(142, 20, 93); color:black; padding:0px; margin-bottom: 5px"> 
+                        <ul >
+                        <li> ID: &nbsp;${users[user].id} </li>
+                        <li> Name:&nbsp; ${users[user].name} </li>
+                        <li> URL:&nbsp; ${users[user].html_url} </li>
+                        <li> Private- Repo:&nbsp; ${users[user].private} </li>
+
+                        </ul>
+                        </div>`
+                    }
+                    document.getElementById('users').innerHTML = users_data;
+                    })
+                }
+        
+       
+   
                </script>        
             <script src="script.js"></script>
         </body>

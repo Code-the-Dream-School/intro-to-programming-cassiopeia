@@ -1,7 +1,7 @@
     .flip-card {
       background-color: transparent;
       padding: 25px;
-      width: 250px;
+      width: 180px;
       height: 150px;
       perspective: 1000px;
       margin-left: 20px;
@@ -107,6 +107,7 @@ p{
     padding: 10px;
   }
   #experience{
+    
     line-height: 1.6;
     font-family: cursive;
     font-weight: bold;
@@ -204,6 +205,8 @@ grid-template-columns: auto auto auto auto;
 gap: 10px;
 background-color: rgb(142, 20, 93);
 padding: 10px;
+margin-left: 20px;
+margin-right: 30px;
 }
 
 .grid-container > div {

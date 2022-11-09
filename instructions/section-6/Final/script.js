@@ -4,30 +4,30 @@ const footer = document.getElementById('footer')
 footer.innerHTML= `Copyright Ⓒ Veronica Johnson@CoDance.com:   ${thisyear}`;
 const copyright = document.createElement('p');
 copyright.innerHTML = `Veronica M Johnson :${thisyear}`;
-footer.appenChild(copyright);
+footer.appendChild(copyright);
 
-let messageForm = document.getElementsByName("leaveMessage")
-let SubmitButton = document.getElementsByTagName("button")
-SubmitButton.addEventListener('click', myFunction);
+// let messageForm = document.getElementsByName("leaveMessage");
+// let SubmitButton = document.getElementsByTagName("button");
+// SubmitButton.addEventListener('click', myFunction);
 
-function myFunction(event){
-    event.preventDefault();
+// function myFunction(event){
+//     event.preventDefault();
 
-    let fname = document.getElementById('name')
-    let emailBox = document.getElementById('email')
-    let messageBox = document.getElementById('message')
+//     let fname = document.getElementById('name')
+//     let emailBox = document.getElementById('email')
+//     let messageBox = document.getElementById('message')
 
-    event.target.fname
-    event.target.emailBox
-    event.target.messageBox
+//     event.target.fname
+//     event.target.emailBox
+//     event.target.messageBox
 
-    console.log(fname, emailBox,messageBox)
-}
+//     console.log(fname, emailBox,messageBox)
+// }
 
 const skills = ['web design', 'HTML', 'CSS','css graphics and animation', 'teaching'];
 const skillSection = document.querySelector('#skills');
 const ul = skillSection.querySelector("ul");
-for(let i=o; i<skills.length; i++){
+for(let i= 0; i<skills.length; i++){
     const skill = document.createElement("li");
     skill.innerText = skills[i];
     ul.appendChild(skill);
@@ -92,26 +92,19 @@ ___________________________________________________________
 
 // --------------------------------------------
 // Followed video tutorial after being frustrated 
-console.log('Hello')
+// 
+
+//Try again 
+// URL - Url of the resource
+
+fetch('https://api.github.com/users/Vjohnson222/repos')
+		.then(response => response.json()) //Converting the response to a JSON object
+		.then( data => document.body.append())
+		.catch( error => console.error(error));
+
+        
 
 
-
-var area = document.getElementById("dataHere");
-var url ='https://api.github.com/users/Vjohnson222/repos';
-
-function renderHTML(data){
-        area.innerHTML = `Projects and Github Repositories${data[0].id}`;
-Console.log(data)
-    }
-
-function fetchData(){
-fetch(url)
-.then(res => res.json())
-.then (data => {
-    renderHTML(data)
-
-    })
-    }
 
 
 
