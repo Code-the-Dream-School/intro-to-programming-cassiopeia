@@ -1,0 +1,165 @@
+body {
+    margin-top: 60px;
+    padding: 30px;
+    padding-top: 15px;
+    background-color: rgb(26, 25, 22);
+}
+
+* {
+    color: rgb(39, 73, 44);
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 15px;
+}
+
+footer {
+    background-color: rgb(236, 242, 207);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: -60px 0px 0px 0px;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    background-color: rgb(236, 242, 207);
+    width: 100%;
+    position: fixed;
+}
+
+li.navbar, a.navbar {
+    display: inline-block;
+    padding: 10px;
+    width: 10%;
+}
+
+a.navbar {
+    background-color: rgb(224, 232, 187);
+    align-items: center;
+}
+
+li.navbar {
+    background-color: inherit;
+}
+
+a.navbar:hover {
+    background-color:rgb(204, 239, 255)
+}
+
+h1 {
+    font-family: 'hylia_serif_betaregular';
+    color: rgb(60, 211, 248);
+    font-size: 45px;
+}
+
+h2 {
+    font-family: 'hylia_serif_betaregular';
+    color: rgb(39, 73, 44);
+    font-size: 25px;
+}
+
+.home {
+    margin: auto;
+    text-align: center;
+}
+
+section {
+    margin: 10px;
+    padding: 5px;
+}
+
+.about {
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(236, 242, 207);
+}
+
+.experiences {
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(236, 242, 207);
+}
+
+div.experience_li {
+    border: block;
+    border-color: rgb(236, 242, 207);
+    border-width: 1px;
+}
+
+.skills {
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(236, 242, 207);
+}
+
+.projects {
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(236, 242, 207);
+}
+
+.connecting {
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(236, 242, 207);
+}
+
+.contact {
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(236, 242, 207);
+}
+
+.messages {
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(236, 242, 207);
+}
+
+button {
+    background-color: rgb(26, 25, 22);
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: rgb(42, 30, 0);
+    color: rgb(60, 211, 248);
+    padding: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: rgb(60, 211, 248);
+    color: rgb(26, 25, 22);
+    border-color: rgb(42, 30, 0);
+}
+
+.remove_button {
+    background-color: rgb(26, 25, 22);
+    color: rgb(60, 211, 248);
+    border-color: rgb(42, 30, 0);
+
+}
+
+.edit_button {
+    background-color: rgb(26, 25, 22);
+    color: rgb(60, 211, 248);
+    border-color: rgb(42, 30, 0);
+}
+
+.ren {
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+@media only screen and (max-width: 800px) {
+    ul.navbar {
+        display: none;
+    }
+    
+    li.navbar, a.navbar {
+        display: none;
+    }
+  }
