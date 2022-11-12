@@ -49,20 +49,6 @@ messageForm.addEventListener("submit", function (event) {
     messageForm.reset();
 });
 
-// var githubRequest = new XMLHttpRequest();
-// githubRequest.open('GET', "https://api.github.com/users/marwaahmad18/repos");
-// githubRequest.send();
-// githubRequest.onload = function() {
-//     var repositories = JSON.parse(this.response);
-//     var projectSection = document.getElementById("projects");
-//     var projectList = projectSection.querySelector("ul");
-//     for (let i = 0; i < repositories.length; i++) {
-//         var project = document.createElement("li");
-//         project.innerText = repositories[i].name;
-//         projectList.appendChild(project);
-//     }
-// };
-
 // Fetch
 fetch("https://api.github.com/users/marwaahmad18/repos",
     {
