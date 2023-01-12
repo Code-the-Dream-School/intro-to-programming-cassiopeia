@@ -55,7 +55,7 @@ function handleSubmit(e) {
 
 function removeElement(e){
     e.target.parentElement.remove();
-    if (messageSection.childNodes.length < 6) messageSection.style.visibility = "hidden";
+    if (messageSection.childNodes.length < 6) messageSection.style.visibility = 'hidden';
 }
 
 function editElement(e){

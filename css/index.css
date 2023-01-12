@@ -61,12 +61,12 @@ button:hover{
 
 .experience {
     display: block;
-    background-color: purple;
+    background-color: rgba(239, 65, 65, 0.915);
 }
 
 .footer {
     padding: 30px;
-    margin: 15px;
+    margin: 20px;
     background-color: #111;
     color: #888;
     font-size: 0.5em;
@@ -85,12 +85,12 @@ button:hover{
 
 .contact{
     display: block;
-    background-color: #400 ;
+    background-color: rgba(18, 213, 28, 0.667) ;
 }
 
 
 .remove_botton{
-    background-color: #900;
+    background-color: rgb(177, 125, 125);
     color: #ddd;
 }
 
@@ -102,7 +102,7 @@ button:hover{
 
 .messages{
     display: block;
-    background-color: #004;
+    background-color: rgb(84, 127, 132);
 }
 
 .messages:botton{
