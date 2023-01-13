@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport", content="width=device-width", initial-scale=1.0"/>
 
     <title>About Me</title>
 
-
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
     <h1>Maksim Khrapavitski</h1>
     <section class="about">
         <h2>About</h2>
         <p>Hello! My name is Maksim Khrapavitski. I am 34 years old. I live in Notth Carolina. 
-            During the las four year I am working as a Quality Control Auditor for MasTec Network Solution Inc. 
-            I'm married and have two sons, 4 and 9 years old.</p>
+            During the last four year I am working as a Quality Control Auditor for MasTec Network Solution Inc.</p>
     </section>
     <section class="experience">
         <h2>Experience</h2>
@@ -33,6 +32,22 @@
         <p><a href="https://instagram.com/hrapavitski">@hrapavitski</a></p>
         <p><a href="https://github.com/MaksimKhrapavitski">github.com/MaksimKhrapavitski</a></p>
         <p><a href="https://telegram.org/@hrapavitski">@hrapavitski</a></p>
+    </section>
+    <setion class="contact">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label id="namePromt">Your name:</label>
+            <input type="text" name="name" required=true></input><br />
+            <label id="emailPromt">Your email:</label>
+            <input type="email" name="email" required=true></input><br />
+            <label id="messagePromt">Enter a message:</label>
+            <textarea name="message" required=true></textarea><br />
+            <button class="submit_button" type="submit">Submit</button>
+        </form>
+    </setion>
+    <section class="messages">
+        <h2>Messages</h2>
+        <ul></ul>
     </section>
     <footer></footer>
     <script src="js/index.js"></script>
