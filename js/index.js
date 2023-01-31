@@ -2,7 +2,7 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const skillsSection = document.querySelector('.skills');
-const skillsList = skillsSection.querySelector("ul");
+const skillsList = document.querySelector('#skillsList');
 const messageForm = document.querySelector('[name="leave_message"]')
 const submission = messageForm.addEventListener('submit', handleSubmit);
 const messageSection = document.querySelector('.messages');
@@ -14,13 +14,13 @@ footer.appendChild(copyright);
 
 const skills = [
     { name: "Javascript", tooltip: "Web developer, front end"}, 
-    { name: "HTML", tooltip: "Web developer, front end"}, 
+    { name: "HTML", tooltip: "Web developer, front end"},
+    {name: "CSS", tooltip: "Web developer, front end"},
     {name: "XML", tooltip: "Web developer, front end"},
 ];
 for (let i = 0; i < skills.length; i++) {
     let item = document.createElement("li");
-    item.innerHTML = `<span>${skills[i].name}</span><span
-    class="tooltip">${skills[i].tooltip}</span>`;
+    item.innerHTML = skills[i].name;
     item.title = skills[i].tooltip;
     item.classList.add("item");
     skillsList.appendChild(item);
@@ -55,7 +55,7 @@ function handleSubmit(e) {
 
 function removeElement(e){
     e.target.parentElement.remove();
-    if (messageSection.childNodes.length < 6) messageSection.style.visibility = 'hidden';
+   
 }
 
 function editElement(e){
