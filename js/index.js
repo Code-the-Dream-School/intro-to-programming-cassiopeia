@@ -50,7 +50,7 @@ function handleSubmit(e) {
     messageSection.appendChild(newMessage);
     if (messageSection.style.visibility ==="hiden") messageSection.style.visibility = "visible";
 
-    messageForm.reset();
+    messageForm.reset(); 
 }
 
 function removeElement(e){
