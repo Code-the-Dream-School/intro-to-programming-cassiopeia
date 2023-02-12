@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport", content="width=device-width", initial-scale=1.0"/>
+
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+</head>
+<body>
+    <header>
+    <h1>Maksim Khrapavitski</h1>
+    <p> A simple page about me and my experience in IT</p>
+
+
+
+    <section class="special">
+        <p>
+        <a href="#about" class="about">About</a>
+        <a href="#experience" class="experience">Experience</a>
+        <a href="#skills" class="skills">Skills</a>
+        <a href="#projects" class="projects">Projects</a>
+        <a href="#connect" class="connect">Connect</a>
+        <a href="#contact" class="contact">Contact</a>
+        </p>
+    </section>
+
+    <img src="img/photo.jpg" alt="My Profile Photo" class="special">
+    </header>
+    <section class="about special", id="about">
+        <h2>About</h2>
+        <p>Hello! My name is Maksim Khrapavitski. I am 34 years old. I live in the RTP area of North Carolina. 
+            During the last four years, I work in the Telecomm industry as a Quality Control Auditor for MasTec Network Solution Inc. My company is one of the biggest vendors of the Telecommunication giant such as AT&T, Verizon, and T-Mobile.  </p>
+    </section>
+    <section class="experience special", id="experience">
+        <h2>Experience</h2>
+        <p>I have some experience in coding:</p>
+        <ul><li>Code the Dream</li>
+            <li>RedRover.School</li>
+            <li>First Step IT School</li>
+        </ul>
+    </section>
+    <section class="skills special" id="skills">
+        <h2>Skills</h2>
+        <ul id="skillsList"> </ul>
+    </section>
+    <section class="projects special" id="projects">
+        <h2>Projects</h2>
+        <p><a href="https://github.com/MaksimKhrapavitski/intro-to-programming-cassiopeia">intro-to-programming-dorado</a></p>
+    </section>
+    <section class="connect special" id="connect">
+        <h2>Connect</h2>
+        <a href="mailto:maksim.khrapavitski@gmail.com">
+        <i class="material-icons" style="font-size:48px">mail</i></a>
+        <a href="https://github.com/MaksimKhrapavitski">
+        <i class="fa fa-github" style="font-size:48px"></i></a>
+        <a href="https://telegram.org/@hrapavitski">
+        <i class="fa fa-telegram" style="font-size:48px"></i></a>
+        <a href="https://instagram.com/hrapavitski">
+        <i class="fa fa-instagram" style="font-size:48px"></i></a>
+        <a href="https://www.facebook.com/maks.khrapavitski">
+        <i class="fa fa-facebook" style="font-size:48px"></i></a>
+        <a href="https://www.linkedin.com/in/maksim-khrapavitski-14b235231/">
+        <i class="fa fa-linkedin-square" style="font-size:48px"></i></a>      
+        <!-- <p><a href="mailto:maksim.khrapavitski@gmail.com">Email</a></p>
+        <p><a href="https://instagram.com/hrapavitski">Instagram</a></p>
+        <p><a href="https://github.com/MaksimKhrapavitski">GitHub</a></p>
+        
+        <p><a href="https://telegram.org/@hrapavitski">Telegram</a></p> 
+        <i class="fa fa-github"><a href="https://github.com/MaksimKhrapavitski">GitHub</a></i>-->
+    </section>
+    <section class="contact special" id="contact">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label id="namePromt">Your name:</label>
+            <input type="text" name="name" required=true></input><br>
+            <br>
+            <label id="emailPromt">Your email:</label>
+            <input type="email" name="email" required=true></input><br>
+            <br>
+            <label id="messagePromt">Enter a message:</label>
+            <textarea name="message" required=true></textarea><br />
+            <button class="submit_button" type="submit">Submit</button>
+        </form>
+    </section>
+    <section class="messages special">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+
+    <hr>
+    <footer>
+    <script src="js/index.js"></script>
+    
+    </footer>
+</body>
+</html>
