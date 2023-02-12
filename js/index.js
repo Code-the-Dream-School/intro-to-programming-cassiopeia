@@ -41,11 +41,11 @@ function handleSubmit(e) {
     removeButton.classList.add("remove_button")
     removeButton.addEventListener('click', removeElement);
     let editButton = document.createElement('button');
-    editButton.innerHTML = "Edit";
+    /*editButton.innerHTML = "Edit";
     editButton.type = "button";
     editButton.classList.add("edit_button");
     editButton.addEventListener('click', editElement);
-    newMessage.appendChild(editButton);
+    newMessage.appendChild(editButton);*/
     newMessage.appendChild(removeButton);
     messageSection.appendChild(newMessage);
     if (messageSection.style.visibility ==="hiden") messageSection.style.visibility = "visible";
@@ -58,7 +58,7 @@ function removeElement(e){
    
 }
 
-function editElement(e){
+/*function editElement(e){
     const item = e.target.parentElement;
     let textElement = item.childNodes[2];
     let newInput = document.createElement('input');
@@ -78,14 +78,14 @@ function editElement(e){
 function editMessage(e){
     let li = e.path[2];
     li.children[1].innerHTML = e.path[1].children[0].value;
-    let editButton = documnet.createElement('button');
+    /*let editButton = documnet.createElement('button');
     editButton.innerHTML = "Edit"
     editButton.type = "button";
     editButton.addEventListener('click', editElement);
     let children = [].slice.call(li.childNodes);
-    children.splice(3, 0, editButton);
-    li.innerHTML = "";
-    children.forEach((item, i) => {
-        li.appendChild(item);
-    })
-}
+    children.splice(3, 0, editButton);*/
+//     li.innerHTML = "";
+//     children.forEach((item, i) => {
+//         li.appendChild(item);
+//     })
+// }
