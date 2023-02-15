@@ -3,7 +3,10 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const skillsSection = document.querySelector('.skills');
 const skillsList = document.querySelector('#skillsList');
-const messageForm = document.querySelector('[name="leave_message"]')
+// const projectSection = document.querySelector('.projects');
+// const projectsList = document.querySelector('#projectsList');
+//const projectSection = document.getElementById('#projectList');
+const messageForm = document.querySelector('[name="leave_message"]');
 const submission = messageForm.addEventListener('submit', handleSubmit);
 const messageSection = document.querySelector('.messages');
 
@@ -41,16 +44,16 @@ function handleSubmit(e) {
     removeButton.classList.add("remove_button")
     removeButton.addEventListener('click', removeElement);
     let editButton = document.createElement('button');
-    editButton.innerHTML = "Edit";
+    /*editButton.innerHTML = "Edit";
     editButton.type = "button";
     editButton.classList.add("edit_button");
     editButton.addEventListener('click', editElement);
-    newMessage.appendChild(editButton);
+    newMessage.appendChild(editButton);*/
     newMessage.appendChild(removeButton);
     messageSection.appendChild(newMessage);
     if (messageSection.style.visibility ==="hiden") messageSection.style.visibility = "visible";
 
-    messageForm.reset();
+    messageForm.reset(); 
 }
 
 function removeElement(e){
@@ -58,7 +61,7 @@ function removeElement(e){
    
 }
 
-function editElement(e){
+/*function editElement(e){
     const item = e.target.parentElement;
     let textElement = item.childNodes[2];
     let newInput = document.createElement('input');
@@ -78,14 +81,42 @@ function editElement(e){
 function editMessage(e){
     let li = e.path[2];
     li.children[1].innerHTML = e.path[1].children[0].value;
-    let editButton = documnet.createElement('button');
+    /*let editButton = documnet.createElement('button');
     editButton.innerHTML = "Edit"
     editButton.type = "button";
     editButton.addEventListener('click', editElement);
     let children = [].slice.call(li.childNodes);
-    children.splice(3, 0, editButton);
-    li.innerHTML = "";
-    children.forEach((item, i) => {
-        li.appendChild(item);
-    })
-}
+    children.splice(3, 0, editButton);*/
+//     li.innerHTML = "";
+//     children.forEach((item, i) => {
+//         li.appendChild(item);
+//     })
+// }
+
+fetch("https://api.github.com/users/MaksimKhrapavitski/repos")
+  .then(response => response.json())
+  .then(projects => {
+    console.log(projects)
+
+    const projectSection = document.querySelector('.projects');
+    const projectsList = document.querySelector('#projectsList');
+
+    for (let i = 0; i < projects.length; i++) {
+        let project = projects[i];
+        let item = document.createElement("li");
+        item.innerHTML = `<a href="${project.html_url}"> ${project.name} </a>`;
+        //item.title = projects[i].tooltip;
+        item.classList.add("item");
+        projectsList.appendChild(item);
+    } 
+
+// data.forEach(projects => {
+//   console.log(projects.html_url, projects.name)
+//   console.log(`<a href="${projects.html_url}"> ${projects.name} </a>`) 
+// });
+
+
+})
+  .catch(error => console.error(error));
+
+

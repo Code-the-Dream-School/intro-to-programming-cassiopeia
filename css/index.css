@@ -164,6 +164,7 @@ background-size: cover;
 }
 
 .special {
+    display:inline-block;
     border: 2px solid steelblue;
     border-radius: 12px;
     padding: 6px;
@@ -173,6 +174,3 @@ i {
     color: black;
     font-size: 48px;
 }
-
-
-
