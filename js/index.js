@@ -3,7 +3,10 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const skillsSection = document.querySelector('.skills');
 const skillsList = document.querySelector('#skillsList');
-const messageForm = document.querySelector('[name="leave_message"]')
+// const projectSection = document.querySelector('.projects');
+// const projectsList = document.querySelector('#projectsList');
+//const projectSection = document.getElementById('#projectList');
+const messageForm = document.querySelector('[name="leave_message"]');
 const submission = messageForm.addEventListener('submit', handleSubmit);
 const messageSection = document.querySelector('.messages');
 
@@ -89,3 +92,31 @@ function editMessage(e){
 //         li.appendChild(item);
 //     })
 // }
+
+fetch("https://api.github.com/users/MaksimKhrapavitski/repos")
+  .then(response => response.json())
+  .then(projects => {
+    console.log(projects)
+
+    const projectSection = document.querySelector('.projects');
+    const projectsList = document.querySelector('#projectsList');
+
+    for (let i = 0; i < projects.length; i++) {
+        let project = projects[i];
+        let item = document.createElement("li");
+        item.innerHTML = `<a href="${project.html_url}"> ${project.name} </a>`;
+        //item.title = projects[i].tooltip;
+        item.classList.add("item");
+        projectsList.appendChild(item);
+    } 
+
+// data.forEach(projects => {
+//   console.log(projects.html_url, projects.name)
+//   console.log(`<a href="${projects.html_url}"> ${projects.name} </a>`) 
+// });
+
+
+})
+  .catch(error => console.error(error));
+
+
