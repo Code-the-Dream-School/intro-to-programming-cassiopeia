@@ -74,7 +74,7 @@ button:hover{
 }
 
 .experience {
-    /*display: block;*/
+    /* display: block;  */
     background-color: orange;
 }
 
@@ -87,13 +87,13 @@ button:hover{
 }
 
 .skills {
-    /*display: block;*/
+    /* display:block; */
     background-color: yellow;
 }
 
 .projects {
 
-    /*display: block;*/
+    /* display: block; */
     background-color: rgb(84, 238, 84);
 }
 
@@ -109,7 +109,7 @@ button:hover{
 
 
 .contact{
-    /*display: block;*/
+    /* display: block; */
     background-color: rgba(0, 0, 255, 0.7);
 }
 
@@ -126,7 +126,7 @@ button:hover{
 
 
 .messages{
-    /*display: block;*/
+    /* display: block; */
     background-color: violet;
 }
 
@@ -164,13 +164,38 @@ background-size: cover;
 }
 
 .special {
-    display:inline-block;
     border: 2px solid steelblue;
     border-radius: 12px;
     padding: 6px;
 }
-
+   
 i {
     color: black;
     font-size: 48px;
+}
+.container {
+    display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+	justify-content: center;
+	padding: 6px;
+	background:orange;
+    border-radius: 12px;
+	margin: 45px auto;
+    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+.flex-item {
+	color: black;
+	padding: 15px;
+	margin: 5px;	
+	/* background: #3db5da; */
+	border-radius: 3px;
+    font-size: 1.3em;
+    font-family: cursive;
+}
+.item-1 {
+    color: rgb(14, 80, 105);
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium';
+    
 }
