@@ -1,0 +1,241 @@
+body {
+  background-image: url("/image/poppies.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Source Serif Pro", serif;
+  text-align: center;
+}
+
+.navigation ul {
+  position: fixed;
+  top: -5px;
+  background-color: #ffc600f2;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.navbar li {
+  float: left;
+  font-size: 18px;
+}
+.navbar li,
+a {
+  display: inline;
+  color: #0f4830;
+  padding: 5px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #fff;
+}
+
+.my-name {
+  margin-top: 150px;
+}
+
+section {
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #b0906ead;
+  padding: 20px;
+  margin: 100px 220px;
+  background-color: #97b6ca;
+}
+h1,
+h2 {
+  color: #0a1a6b;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  display: block;
+  text-align: center;
+  list-style-type: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#messages ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+#messages a {
+  text-decoration: none;
+}
+
+.project-list a {
+  text-decoration: none;
+  color: #c25e06;
+}
+
+a:hover {
+  color: #3347df;
+}
+
+.skills-list {
+  padding: 1px;
+}
+
+.submitButton button {
+  color: #fff;
+  background-color: #0a1a6b;
+  border-radius: 18px;
+  border: #d49d8f;
+  box-shadow: 0 10px 10px rgb(0 0 0 /10%);
+  padding: 14px 23px;
+  margin: 15px 0;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #d17219;
+  border: #d17219;
+  border-style: solid;
+}
+
+.message-form {
+  padding: 2px;
+  margin: 5px;
+}
+
+.name {
+  margin-bottom: 20px;
+}
+
+.message {
+  margin-top: 20px;
+}
+.remove-button {
+  background-color: #0a1a6b;
+  color: #fff;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  border: #0f4830;
+  box-shadow: 0 10px 10px rgb(0 0 0 /10%);
+}
+.edit-button {
+  background-color: #0a1a6b;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: #0f4830;
+  box-shadow: 0 10px 10px rgb(0 0 0 /10%);
+}
+
+.connect a {
+  text-decoration: none;
+}
+
+.connect img {
+  border-radius: 7px;
+  width: 50px;
+}
+
+footer {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+@media (max-width: 851px) {
+  main {
+    flex-direction: column;
+  }
+
+  body {
+    font-family: monospace;
+    text-align: center;
+  }
+  video {
+    width: 300px;
+  }
+  section {
+    background-color: #97b6ca;
+    color: #02321e;
+    padding: 20px;
+    margin: 60px 20px 40px 20px;
+  }
+  .navigation {
+    margin: -54px 0px 0px -30px;
+  }
+  .navbar ul {
+    background-color: #e2d1f9;
+    margin: 30px 0 50px 0px;
+    overflow: hidden;
+  }
+  .navbar li {
+    float: left;
+    font-size: 14px;
+  }
+  .navbar li,
+  a {
+    padding: 5px;
+  }
+  .my-name {
+    margin-top: 200px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+
+  .skills-list {
+    display: block;
+  }
+  .name,
+  .email {
+    position: initial;
+    margin: auto;
+    padding: 10px;
+  }
+  .message {
+    margin-top: 10px;
+  }
+
+  #messages ul {
+    display: block;
+    font-size: 14px;
+  }
+
+  .remove-button {
+    font-size: 12px;
+    background-color: #0a1a6b;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: #0a1a6b;
+    box-shadow: 0 10px 10px rgb(0 0 0 /10%);
+  }
+  .edit-button {
+    font-size: 12px;
+    background-color: #0a1a6b;
+    color: #fff;
+    padding: 10px 13px;
+    border-radius: 20px;
+    border: #0a1a6b;
+    box-shadow: 0 10px 10px rgb(0 0 0 /10%);
+  }
+}

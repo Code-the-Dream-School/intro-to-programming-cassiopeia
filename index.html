@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mariela Tinoco Rojas</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <nav>
+        <ul class="navbar">
+          <li class="navbar" id="navbar_link_about">
+            <a href="#about" class="navbar" id="navbar_link_about"> About </a>
+          </li>
+          <li class="navbar" id="navbar_link_exp">
+            <a href="#experience" class="navbar" id="navbar_link_exp">
+              Experience
+            </a>
+          </li>
+          <li class="navbar" id="navbar_link_skills">
+            <a href="#skills" class="navbar" id="navbar_link_skills"> Skills</a>
+          </li>
+          <li class="navbar" id="navbar_link_projects">
+            <a href="#projects" class="navbar" id="navbar_link_projects">
+              Projects</a
+            >
+          </li>
+          <li class="navbar" id="navbar_link_connect">
+            <a href="#connect" class="navbar" id="navbar_link_connect">
+              Connect
+            </a>
+          </li>
+          <li class="navbar" id="navbar_link_message">
+            <a href="#message" class="navbar" id="navbar_link_message">
+              Message
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="my-name">
+      <h1>Mariela Tinoco Rojas</h1>
+    </section>
+    <video src="video/Avatar.mp4" autoplay loop width="500"></video>
+
+    <section class="about" id="about">
+      <h2>About:</h2>
+      <p>
+        Hello my name is Mariela Tinoco Rojas. My current interest is in
+        Front-end developing, I would love to create great user experiences
+        through any products. I am currently expanding my coding knowldge on
+        programming with Code the Dream. I recently completed their introduction
+        to programming course and am awaiting to do an advanced course.I also
+        have a Bachleor of Arts degree in Psychology.
+      </p>
+    </section>
+
+    <section class="experience" id="experience">
+      <h2>Experience:</h2>
+      <p class="experience-info">
+        At the moment I am a Behavior Interventionist, I implement behavior
+        plans set by the BCBA for a one-on-one service of Applied Behavioral
+        Analysis (ABA). I monitor client's performance in therapy activities and
+        implement positive reinforcement and antecedent strategies. I have built
+        two projects with SheCodes and both projects can be found below on my
+        projects list with links to the repositories. The react-weather-app uses
+        API to retrive current temperture when a city is searched. The
+        dictionary-project uses API to find the definition of a word that is
+        searched and displays photos of the word.
+      </p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul></ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul></ul>
+    </section>
+
+    <section class="message" id="message">
+      <h2>Leave a Message</h2>
+
+      <form name="leave_message" class="message-form">
+        <div class="name">
+          <label for="name">Name:</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            required="true"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="email">
+          <label for="email">Email:</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            required="true"
+            placeholder="Enter email"
+          />
+          <br />
+        </div>
+        <div class="message">
+          <label for="message">Message:</label>
+          <br />
+          <textarea name="message"> </textarea>
+        </div>
+        <div class="submitButton">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="messages" style="visibility: hidden">
+      <h2 id="messages_header"></h2>
+      <div class="flex-container">
+        <ul></ul>
+      </div>
+    </section>
+
+    <footer>
+      <span class="connect" id="connect">
+        <a href="https://github.com/Mariela-t" target="_blank">
+          <img src="image/github.png" />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/mariela-tinoco-rojas-732729222/"
+          target="_blank"
+        >
+          <img src="image/LinkedIn.png" />
+        </a>
+      </span>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
